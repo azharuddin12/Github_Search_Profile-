@@ -1,0 +1,145 @@
+:root {
+  --primary-clr: #24292e;
+  --secondary-clr: #1f883d;
+  --white-clr: #ffffff;
+  --bg-clr: #f6f8fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+body {
+  background-color: var(--bg-clr);
+}
+.header h1 {
+  text-align: center;
+  background-color: var(--primary-clr);
+  padding: 12px 0px;
+  font-weight: 400;
+  color: var(--white-clr);
+  font-size:clamp(24px,4vw,36px);
+}
+.header i {
+  font-size:clamp(24px,4vw,36px);
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 70%;
+}
+.searchBar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+}
+.searchBar #btn {
+  background: var(--secondary-clr);
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  color: var(--white-clr);
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white-clr);
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  width: 300px;
+  padding: 30px;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.card .name {
+  margin: 8px 0px;
+  font-weight: 600;
+}
+.card .userName {
+  color: #747070;
+}
+.card .bio {
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 14px;
+}
+.card a {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--secondary-clr);
+  text-decoration: none;
+  color: var(--white-clr);
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.card .inner {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px 0px;
+  border-top: 1px solid #f0f0f0;
+}
+.card .location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.card .follow,
+.card .follower {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 20px;
+}
+.card .follower {
+  margin-right: 10px;
+}
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: red;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  .searchBar {
+    padding: 0px 10px;
+    margin: 30px auto;
+    width: 100%;
+  }
+  .searchBar #btn{
+    padding: 10px 20px;
+    margin-left:0px ;
+  }
+
+}
